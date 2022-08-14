@@ -16,7 +16,6 @@ class telegram_bot_cli:
     def auth(self, id, username):
         rs = False if id != self.id or username != self.username else True
         return rs
-    
 
     def cli_sender(self, cli):
         cli = str(cli).lower()
