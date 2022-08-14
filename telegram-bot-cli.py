@@ -32,7 +32,7 @@ class telegram_bot_cli:
     
     def info_command(self, update: Update, context: CallbackContext):
         user = update.effective_user
-        update.message.reply_text(f'id: {user.id} - username: {user.username} - first_name: {user.first_name} - last_name: {user.last_name}')
+        rs   = update.message.reply_text(f'id: {user.id} - username: {user.username} - first_name: {user.first_name} - last_name: {user.last_name}')
     
     def help_command(self, update: Update, context: CallbackContext):
         menu  = '''*Bot Menu Management*
